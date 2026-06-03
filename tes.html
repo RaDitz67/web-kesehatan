@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tes Kesehatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">SehatCare</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="tes.html">Tes Kesehatan</a>
+    <a href="chat.html">Chat AI</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <span>Tes Kesehatan</span>
+  <h1>Cek kondisi tubuhmu secara sederhana</h1>
+  <p>Gunakan kalkulator kesehatan ringan untuk edukasi awal.</p>
+</section>
+
+<section class="section test-section">
+  <div class="test-grid">
+    <div class="test-box">
+      <h3>Tes BMI</h3>
+      <input type="number" id="berat" placeholder="Berat badan (kg)">
+      <input type="number" id="tinggi" placeholder="Tinggi badan (cm)">
+      <button onclick="hitungBMI()">Hitung BMI</button>
+      <p id="hasilBMI" class="result"></p>
+    </div>
+
+    <div class="test-box">
+      <h3>Kebutuhan Air</h3>
+      <input type="number" id="beratAir" placeholder="Berat badan (kg)">
+      <button onclick="hitungAir()">Hitung Kebutuhan Air</button>
+      <p id="hasilAir" class="result"></p>
+    </div>
+
+    <div class="test-box">
+      <h3>Kualitas Tidur</h3>
+      <select id="jamTidur">
+        <option value="">Pilih durasi tidur</option>
+        <option value="kurang">Kurang dari 6 jam</option>
+        <option value="cukup">7 - 8 jam</option>
+        <option value="lebih">Lebih dari 9 jam</option>
+      </select>
+      <button onclick="cekTidur()">Cek Tidur</button>
+      <p id="hasilTidur" class="result"></p>
+    </div>
+  </div>
+
+  <p class="note">
+    Hasil tes ini hanya perkiraan sederhana, bukan diagnosis medis.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 SehatCare.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

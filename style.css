@@ -5,27 +5,21 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: #f7fbf9;
   color: #1f3d35;
 }
 
 .navbar {
-  width: 100%;
   padding: 22px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(247, 251, 249, 0.9);
-  backdrop-filter: blur(12px);
+  background: rgba(247, 251, 249, 0.95);
+  border-bottom: 1px solid #dceee7;
   position: sticky;
   top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #dceee7;
+  z-index: 10;
 }
 
 .logo {
@@ -35,7 +29,7 @@ body {
 }
 
 nav a {
-  margin-left: 26px;
+  margin-left: 24px;
   text-decoration: none;
   color: #35584f;
   font-weight: 500;
@@ -46,7 +40,7 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 88vh;
   padding: 90px 8%;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -57,14 +51,16 @@ nav a:hover {
     linear-gradient(135deg, #f7fbf9, #eef9f4);
 }
 
-.badge {
+.badge,
+.page-header span {
   display: inline-block;
-  background: #dff5ea;
   color: #1b7f5a;
+  background: #dff5ea;
   padding: 10px 18px;
   border-radius: 999px;
   font-size: 14px;
-  margin-bottom: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -85,7 +81,6 @@ nav a:hover {
 .hero-buttons {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -133,6 +128,23 @@ nav a:hover {
   color: #1b7f5a;
 }
 
+.page-header {
+  padding: 90px 8% 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #eef9f4, #f7fbf9);
+}
+
+.page-header h1 {
+  font-size: 46px;
+  color: #173f35;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  color: #55736a;
+  font-size: 18px;
+}
+
 .section {
   padding: 90px 8%;
 }
@@ -142,14 +154,12 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
-.section-title span,
-.about span {
+.section-title span {
   color: #1b7f5a;
   font-weight: 700;
 }
 
-.section-title h2,
-.about h2 {
+.section-title h2 {
   font-size: 38px;
   color: #173f35;
   margin-top: 10px;
@@ -244,10 +254,6 @@ button:hover {
   line-height: 1.6;
 }
 
-.chat-section {
-  background: white;
-}
-
 .chat-box {
   max-width: 760px;
   margin: auto;
@@ -307,16 +313,27 @@ button:hover {
   font-size: 14px;
 }
 
-.about {
-  background: #eef9f4;
-  text-align: center;
+.about-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
 }
 
-.about p {
-  max-width: 760px;
-  margin: 20px auto 0;
-  line-height: 1.8;
+.about-box {
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  border: 1px solid #dceee7;
+}
+
+.about-box h2 {
+  margin-bottom: 14px;
+  color: #173f35;
+}
+
+.about-box p {
   color: #55736a;
+  line-height: 1.8;
 }
 
 footer {
@@ -331,12 +348,14 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 40px;
+  .hero h1,
+  .page-header h1 {
+    font-size: 38px;
   }
 
   .cards,
-  .test-grid {
+  .test-grid,
+  .about-page {
     grid-template-columns: 1fr;
   }
 

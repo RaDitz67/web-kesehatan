@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat AI Kesehatan | SehatCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">SehatCare</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="tes.html">Tes Kesehatan</a>
+    <a href="chat.html">Chat AI</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <span>AI Bot Kesehatan</span>
+  <h1>Tanyakan Informasi Kesehatan Umum</h1>
+  <p>Dapatkan edukasi kesehatan dasar melalui AI Assistant.</p>
+</section>
+
+<section class="section chat-section">
+  <div class="chat-container">
+    <div class="chat-top">
+      <div>
+        <h2>SehatBot</h2>
+        <p>Asisten kesehatan virtual</p>
+      </div>
+      <div class="status">Online</div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot-message">
+        Halo! Saya SehatBot. Silakan tanyakan informasi kesehatan umum.
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Tulis pertanyaan kesehatan...">
+      <button onclick="kirimChat()">Kirim</button>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <strong>Disclaimer:</strong>
+    Informasi AI hanya untuk edukasi umum dan bukan pengganti dokter.
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SehatCare.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
